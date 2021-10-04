@@ -24,7 +24,10 @@ module.exports = {
         'collectionDescription': '15px',
         'collectionDesktop': '150px',
         'collectionTablet': '96px',
-        'collectionMobile': '40px'
+        'collectionMobile': '40px',
+        'featuresTitleDesktop': '40px',
+        'featuresTitleTablet': '32px',
+        'featuresTitleMobile': '28px',
       },
       backgroundImage: {
         'heroMobileImg': "url('/src/img/heroMobile.jpg')" ,
@@ -34,7 +37,20 @@ module.exports = {
       maxWidth: {
         'collectionCoffee': '200px',
         'collectionDescTablet': '282px',
-        'collectionDescDesktop': '255px'
+        'collectionDescDesktop': '255px',
+        'collectionCard': '280px',
+        'collectionCardTablet': '570px',
+        'collectionCardDesktop': '380px',
+        'collectionCardIcon': '72px'
+      },
+      height: {
+        'collectionCard': '380px',
+        'collectionCardTablet': '180px',
+        'collectionContainerMobile': '900px',
+        'collectionContainer': '580px'
+      },
+      margin: {
+        'collectionCardMarginBottomMobile': '48rem'
       }
     }
   },

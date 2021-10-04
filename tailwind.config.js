@@ -33,6 +33,9 @@ module.exports = {
         'heroMobileImg': "url('/src/img/heroMobile.jpg')" ,
         'heroTabletImg': "url('/src/img/heroTablet.jpg')",
         'heroDesktopImg': "url('/src/img/heroDesktop.jpg')",
+        'aboutHeroMobileImg': "url('/src/img/aboutHeroMobile.jpg')" ,
+        'aboutHeroTabletImg': "url('/src/img/aboutHeroTablet.jpg')",
+        'aboutHeroDesktopImg': "url('/src/img/aboutHeroDesktop.jpg')",
       },
       maxWidth: {
         'collectionCoffee': '200px',
@@ -47,7 +50,8 @@ module.exports = {
         'collectionCard': '380px',
         'collectionCardTablet': '180px',
         'collectionContainerMobile': '900px',
-        'collectionContainer': '580px'
+        'collectionContainer': '580px',
+        'commitmentImg': '520px'
       },
       margin: {
         'collectionCardMarginBottomMobile': '48rem'

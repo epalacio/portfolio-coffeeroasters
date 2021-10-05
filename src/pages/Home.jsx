@@ -1,4 +1,4 @@
-import Nav from '../components/Navbar.component'
+import Navbar from '../components/Navbar.component'
 import Hero from '../components/Hero.component'
 import Collection from '../components/Collection.component'
 import Features from '../components/Features.component'
@@ -7,8 +7,8 @@ import Footer from '../components/Footer.component'
 
 const Home = () => {
     return ( 
-        <div className='mx-3'>
-            <Nav />
+        <div className='mx-6'>
+            <Navbar />
             <Hero />
             <Collection />
             <Features />

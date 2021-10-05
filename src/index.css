@@ -20,3 +20,34 @@ h3,
 h4 {
   font-family: 'Fraunces', sans-serif;
 }
+
+.answerInput:checked + .answerDiv {
+  background-color: #0E8784;
+  color: #fff;
+} 
+
+.answerInput:checked + .answerDiv h3 {
+  color: #fff;
+}
+
+/* #q1ans1:checked + .answerDiv,
+#q1ans2:checked + .answerDiv,
+#q1ans3:checked + .answerDiv,
+#q2ans1:checked + .answerDiv,
+#q2ans2:checked + .answerDiv,
+#q2ans3:checked + .answerDiv {
+  background-color: #0E8784;
+  color: #fff;
+}
+
+#q1ans1:checked + .answerDiv h3,
+#q1ans2:checked + .answerDiv h3,
+#q1ans3:checked + .answerDiv h3,
+#q2ans1:checked + .answerDiv h3,
+#q2ans2:checked + .answerDiv h3,
+#q2ans3:checked + .answerDiv h3,
+#q3ans1:checked + .answerDiv h3,
+#q3ans2:checked + .answerDiv h3,
+#q3ans3:checked + .answerDiv h3 {
+  color: #fff
+} */

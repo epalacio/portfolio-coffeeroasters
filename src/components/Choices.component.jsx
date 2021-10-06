@@ -157,8 +157,8 @@ const Choices = () => {
                             <form action='/' className='px-2 pt-4 pb-2 flex flex-col md:flex-row'>
                                 <label htmlFor='q4ans1'>
                                     <input type='radio' name='q4' id='q4ans1' className='answerInput hidden' />
-                                    <div className='answerDiv rounded-md bg-isabelline hover:bg-paleOrange cursor-pointer px-12 pb-8 pt-8 md:pb-28 m-2'>
-                                        <h3 className='text-darkGrayBlue text-collectionTitle mb-6' onClick={() => handleClick('grind', 'Wholebean')}>Wholebean</h3>
+                                    <div className='answerDiv rounded-md bg-isabelline hover:bg-paleOrange cursor-pointer px-12 pb-8 pt-8 md:pb-28 m-2' onClick={() => handleClick('grind', 'Wholebean')}>
+                                        <h3 className='text-darkGrayBlue text-collectionTitle mb-6'>Wholebean</h3>
                                         <p>Best choice if you cherish the full sensory experience</p>
                                     </div>
                                 </label>

@@ -26,7 +26,7 @@ const Works = () => {
             </div>
             <div className='flex flex-col md:flex-row'>
                 {steps.map(step => (
-                    <div className='text-center md:text-left my-16'>
+                    <div className='text-center md:text-left my-16' key={step.step}>
                         <p className='text-heroTitleDesktop text-paleOrange font-fraunces'>{step.step}</p>
                         <h3 className='text-darkGrayBlue text-featuresTitleMobile md:text-featuresTitleTablet my-6'>{step.title}</h3>
                         <p className='text-darkGrayBlue pr-2 md:pr-16'>{step.description}</p>

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Transition } from '@headlessui/react';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Transition } from '@headlessui/react'
 
 import navLogo from '../img/logoNav.svg'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
   
   return (
     <div>
@@ -13,13 +14,13 @@ const Navbar = () => {
           <div className='flex items-center justify-between h-16'>
             <div className='flex items-center w-full justify-between'>
               <div className='flex-shrink-0'>
-                <img src={navLogo} alt='Company Logo and Bookmark word'/>
+                <Link to='/'><img src={navLogo} alt='Company Logo and Bookmark word'/></Link>
               </div>
               <div className='hidden md:block'>
                 <div className='ml-10 flex items-baseline space-x-4 font-bold'>
-                  <a href='/' className='text-gray hover:text-darkGrayBlue px-3 py-2 text-textCTA'>FEATURES</a>
-                  <a href='/' className='text-gray hover:text-darkGrayBlue px-3 py-2 text-textCTA'>PRICING</a>
-                  <a href='/' className='text-gray hover:text-darkGrayBlue px-3 py-2 text-textCTA'>CONTACT</a>
+                  <Link to='/' className='text-gray hover:text-darkGrayBlue px-3 py-2 text-textCTA'>HOME</Link>
+                  <Link to='/aboutUs' className='text-gray hover:text-darkGrayBlue px-3 py-2 text-textCTA'>ABOUT US</Link>
+                  <Link to='/subscribe' className='text-gray hover:text-darkGrayBlue px-3 py-2 text-textCTA'>CREATE YOUR PLAN</Link>
                 </div>
               </div>
             </div>
@@ -83,9 +84,9 @@ const Navbar = () => {
           {(ref) => (
             <div className='md:hidden flex flex-col justify-between' id='mobile-menu' style={{'min-height': '90%'}}>
               <div ref={ref} className='pt-12 divide-y-1 divide-gray text-center text-collectionTitle font-fraunces'>
-                <a href='/' className='text-darkGrayBlue block py-6'>FEATURES</a>
-                <a href='/' className='text-darkGrayBlue block py-6'>PRICING</a>
-                <a href='/' className='text-darkGrayBlue block py-6'>CONTACT</a>
+                <Link to='/' className='text-darkGrayBlue block py-6'>HOME</Link>
+                <Link to='/aboutUs' className='text-darkGrayBlue block py-6'>ABOUT US</Link>
+                <Link to='/subscribe' className='text-darkGrayBlue block py-6'>CREATE YOUR PLAN</Link>
               </div>
             </div>
             
@@ -93,7 +94,7 @@ const Navbar = () => {
         </Transition>
       </nav>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

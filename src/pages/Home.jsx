@@ -1,19 +1,22 @@
-import Navbar from '../components/Navbar.component'
+import { useLayoutEffect } from "react";
+
 import Hero from '../components/Hero.component'
 import Collection from '../components/Collection.component'
 import Features from '../components/Features.component'
 import Works from '../components/Works.component'
-import Footer from '../components/Footer.component'
 
 const Home = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+    
     return ( 
         <div className='mx-6'>
-            <Navbar />
             <Hero />
             <Collection />
             <Features />
             <Works />
-            <Footer />
         </div>
      );
 }

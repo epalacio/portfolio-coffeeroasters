@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Works = () => {
     const steps = [
         {
@@ -31,7 +33,7 @@ const Works = () => {
                     </div>
                 ))}
             </div>
-            <a  className='block mx-auto md:mx-0 py-4 px-6 text-white bg-darkCyan hover:bg-viking max-w-max rounded-md font-fraunces font-bold' href="/">Create your plan</a>
+            <Link  className='block mx-auto md:mx-0 py-4 px-6 text-white bg-darkCyan hover:bg-viking max-w-max rounded-md font-fraunces font-bold' to="/subscribe">Create your plan</Link>
         </div>
      );
 }

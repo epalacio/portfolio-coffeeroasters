@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import Modal from './Modal.component';
+
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
@@ -223,7 +225,9 @@ const Choices = () => {
                     <p className='text-gray text-collectionDescription mb-6'>ORDER SUMMARY</p>
                     <h3 className='text-white text-collectionTitle'>“I drink my coffee as <span className='text-darkCyan'>{answers.drink}</span>, with a <span className='text-darkCyan'>{answers.type}</span> type of bean. <span className='text-darkCyan'>{answers.quantity}</span> ground ala <span className='text-darkCyan'>{answers.grind}</span>, sent to me <span className='text-darkCyan'>{answers.delivery}</span>."</h3>
                 </div>
-                <a  className='block mx-auto mb-6 py-4 px-6 text-white bg-darkCyan hover:bg-viking max-w-max rounded-md font-fraunces font-bold' href="/">Create my plan!</a>
+                <Modal 
+                    answers={answers}
+                />
             </div>
      );
 }

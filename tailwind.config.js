@@ -43,6 +43,7 @@ module.exports = {
         'stepsMobileImg': "url('/src/img/stepsMobile.png')",
         'stepsTabletImg': "url('/src/img/stepsTablet.png')",
         'stepsDesktopImg': "url('/src/img/stepsDesktop.png')",
+        'bgModal': "url('/src/img/bg-modal-top.png')"
       },
       maxWidth: {
         'collectionCoffee': '200px',
